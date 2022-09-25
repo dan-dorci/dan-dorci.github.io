@@ -1,0 +1,25 @@
+.title{
+    display: flex;
+    justify-content: center;	
+}
+#twocols{
+	display: flex;
+	margin: 0 20%;
+}
+#left{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+#left > img{
+	width: 50%;
+}
+#right{
+    width: 50%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+#right > a{
+	margin: 0 auto;
+}
