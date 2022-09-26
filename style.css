@@ -29,6 +29,9 @@
 .spacebottomtwo{
 	margin-bottom: 20px;
 }
+.nobullet{
+	display: block;
+}
 #homelink{
     position: absolute;
     top: 10px;
