@@ -23,3 +23,14 @@
 #right > a{
 	margin: 0 auto;
 }
+.spacebottomone{
+	margin-bottom: 10px;
+}
+.spacebottomtwo{
+	margin-bottom: 20px;
+}
+#homelink{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
