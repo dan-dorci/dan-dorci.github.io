@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import ReactGA from 'react-ga';
 
 const words = ['Yes', '🤭', '<3', 'pssss....', 'YAS', 'over here :)', 'Pick me!', 'PLEASE', 'YESSSSS', 'is it really that hard 🤨'
 ];
@@ -25,6 +26,14 @@ const YesButton = ({setCompleted}) => {
     }, []);
 
     const clickHandler = (e) => {
+
+        ReactGA.event({
+            category: 'User',
+            action: 'click',
+            label: 'Yes',
+          });
+
+          
         setRemoveButton(true);
         const button = e.target;
         const numEmojis = 200;

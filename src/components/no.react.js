@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga';
 
 const caughtWords = ['so you hate me :(',
     "😭",
@@ -19,6 +20,13 @@ const NoButton = () => {
     const [buttonText, setButtonText] = useState(startingText);
 
     const moveButton = () => {
+
+        ReactGA.event({
+            category: 'User',
+            action: 'move',
+            label: 'No',
+          });
+
         setTimeout(() => {
             const randomX = Math.random() * 90;
             const randomY = Math.random() * 90;
@@ -27,6 +35,13 @@ const NoButton = () => {
 
     };
     const clickHandler = () => {
+
+        ReactGA.event({
+            category: 'User',
+            action: 'click',
+            label: 'No',
+          });
+
         setButtonText(caughtWords[caughtWordIndex]);
 
         setTimeout(() => {
